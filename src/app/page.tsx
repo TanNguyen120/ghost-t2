@@ -1,6 +1,5 @@
-import { CldImage, CldUploadWidget } from 'next-cloudinary';
 import ImagesList from './components/imagesList';
-import UploadWidget from './components/uploadWidget';
+
 import UploadImgSimp from './components/uploadImgSimp';
 
 export default function Home() {

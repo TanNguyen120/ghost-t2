@@ -1,6 +1,7 @@
 'use client';
 import { CldUploadWidget } from 'next-cloudinary';
 import React, { useEffect, useState } from 'react';
+import vietHoaJson from '../../../public/lang/vietHoa.json';
 
 const UploadImgSimp = () => {
   // Type script ma xai any vi luoi :))
@@ -25,6 +26,12 @@ const UploadImgSimp = () => {
       }}
       onClose={() => {
         setCloseWidget(true);
+      }}
+      options={{
+        language: 'en',
+        text: {
+          vietHoaJson,
+        },
       }}
     >
       {({ open }) => {

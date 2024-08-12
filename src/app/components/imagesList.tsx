@@ -30,18 +30,24 @@ export default function ImagesList() {
   }
 
   return (
-    <div className=' flex flex-col'>
-      {imgList?.map((ele: any, i: number) => (
-        <div key={i}>
-          <Image
-            src={ele.url}
-            height={ele.height / 2}
-            width={ele.width / 2}
-            alt={ele.public_id}
-            loading='lazy'
-          />
-        </div>
-      ))}
+    <div className=' flex flex-col mt-12'>
+      <div className='flex flex-col md:flex-row md:flex-wrap gap-2 justify-center'>
+        {imgList?.map((ele: any, i: number) => (
+          <div
+            key={i}
+            className='md:h-[700px] md:w-auto w-[90%] h-auto bg-slate-400'
+          >
+            <Image
+              src={ele.url}
+              height={ele.height}
+              width={ele.width}
+              alt={ele.public_id}
+              loading='lazy'
+              className='h-[100%] w-[100%]'
+            />
+          </div>
+        ))}
+      </div>
       <div
         className='p-2 rounded-md bg-slate-400 text-white w-fit mx-auto border mt-11 hover:cursor-pointer hover:bg-slate-300'
         onClick={(e) => {

@@ -18,6 +18,9 @@ const UploadImgSimp = () => {
       window.location.reload();
     }
   }, [closeWidget]);
+
+  const vieJson = vietHoaJson.en;
+
   return (
     <CldUploadWidget
       uploadPreset='ml_default'
@@ -28,9 +31,9 @@ const UploadImgSimp = () => {
         setCloseWidget(true);
       }}
       options={{
-        language: 'en',
+        language: 'vie',
         text: {
-          vietHoaJson,
+          vie: vieJson,
         },
       }}
     >

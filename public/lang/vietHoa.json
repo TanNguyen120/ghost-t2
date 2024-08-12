@@ -213,11 +213,11 @@
       "authenticating": "Authenticating..."
     },
     "local": {
-      "browse": "Browse",
-      "dd_title_single": "Drag and Drop an asset here",
-      "dd_title_multi": "Drag and Drop assets here",
-      "drop_title_single": "Drop a file to upload",
-      "drop_title_multiple": "Drop files to upload"
+      "browse": "Tìm Trong Máy",
+      "dd_title_single": "Kéo và thả một tệp vào đây",
+      "dd_title_multi": "Kéo và thả các tệp vào đây",
+      "drop_title_single": "Thả tệp để tải lên",
+      "drop_title_multiple": "Thả các tệp để tải lên"
     },
     "shutterstock": {
       "no_auth_title": "Upload assets from your Shutterstock account.",
